@@ -20,6 +20,7 @@ namespace HW_2SP
         public Form1()
         {
             InitializeComponent();
+            
         }
        
         const uint WM_SETTEXT = 0x0C; //константа, идентифицирующая сообщение WM _ SETTEXT
@@ -32,7 +33,9 @@ namespace HW_2SP
         List<Process> Processes = new List<Process>(); /*список, в котором будут храниться объекты, описывающие дочерние процессы приложения*/
         int Counter = 0; /*счётчик запущенных процессов*/
 
-        private void l_2_Click(object sender, EventArgs e)
+        
+
+            private void l_2_Click(object sender, EventArgs e)
         {
 
         }
