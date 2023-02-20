@@ -54,14 +54,14 @@ namespace HW_2SP
                 proc = new Process();
                 proc.StartInfo = new ProcessStartInfo("notepad.exe");
                 proc.Start();
-                //if (CB.Checked)
-                //{
+                if (CB.Checked)
+                {
                     proc.WaitForExit();
                     if (proc.HasExited)
                     {
                         DllImportC.MessageBox(IntPtr.Zero, $"Процесс завершен. Код завершения: {proc.ExitCode}", " ", MB_OK | MB_INFORMATION);
                     }
-               // }
+                }
             }
             catch (Exception ex)
             {
