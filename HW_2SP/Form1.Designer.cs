@@ -37,6 +37,7 @@
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_run = new System.Windows.Forms.Button();
+            this.CB = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lb_1
@@ -78,23 +79,23 @@
             // 
             // btn_start
             // 
-            this.btn_start.Enabled = false;
             this.btn_start.Location = new System.Drawing.Point(267, 89);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(75, 23);
             this.btn_start.TabIndex = 4;
             this.btn_start.Text = "Start";
             this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // btn_stop
             // 
-            this.btn_stop.Enabled = false;
             this.btn_stop.Location = new System.Drawing.Point(267, 133);
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.Size = new System.Drawing.Size(75, 23);
             this.btn_stop.TabIndex = 5;
             this.btn_stop.Text = "Stop";
             this.btn_stop.UseVisualStyleBackColor = true;
+            this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
             // 
             // btn_close
             // 
@@ -126,11 +127,22 @@
             this.btn_run.Text = "Run";
             this.btn_run.UseVisualStyleBackColor = true;
             // 
+            // CB
+            // 
+            this.CB.AutoSize = true;
+            this.CB.Location = new System.Drawing.Point(278, 37);
+            this.CB.Name = "CB";
+            this.CB.Size = new System.Drawing.Size(64, 20);
+            this.CB.TabIndex = 9;
+            this.CB.Text = "Begin";
+            this.CB.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 411);
+            this.Controls.Add(this.CB);
             this.Controls.Add(this.btn_run);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btn_close);
@@ -158,6 +170,7 @@
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Button btn_refresh;
         private System.Windows.Forms.Button btn_run;
+        private System.Windows.Forms.CheckBox CB;
     }
 }
 
