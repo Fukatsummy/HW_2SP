@@ -50,6 +50,7 @@ namespace HW_SP3
                 Console.WriteLine("Из потока: " + i);
             }
         }
+
         static void ConsoleWrite(object my) 
         {
             int start = ((MyObject)my).Start;
